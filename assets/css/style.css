@@ -327,8 +327,9 @@ button:hover {
 }
 
 .Real_books .Rbook_header {
+  margin-top: 3rem;
   color: white;
-  font-size: clamp(1.4rem, 3vw, 1rem);
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
   font-weight: 400;
   text-align: center;
   padding: 1rem;
