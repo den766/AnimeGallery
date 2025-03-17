@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --font-primary: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* !landing page Style */
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  gap: 3.8rem;
+  height: 39.875rem;
+}
+
+.Img_container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.Img_container svg {
+  width: 100%;
+  height: auto;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.headings h1 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.headings p {
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.buttons button {
+  font-size: clamp(1rem, 3vw, 1rem);
+}
+
+.sign_btn {
+  width: 22.1rem;
+  background-color: #000000;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.Create_btn {
+  width: 22.1rem;
+  background-color: #ffffff;
+  border: 2px solid #747474;
+  border-radius: 12px;
+  color: black;
+  text-align: center;
+  height: 56px;
+  padding: 18px;
+  cursor: pointer;
+}
+
+/* !Registration Page Styling */
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 40rem;
+  width: 20rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  display: block;
+  font-size: 0.8rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: 2px solid #d8dadc;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #808080;
+  opacity: 1;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-radio input {
+  display: none;
+}
+.custom-radio span {
+  display: inline-block;
+  margin-top: 5px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-radio input:checked + span::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btnR button {
+  width: 18rem;
+  background-color: #000000;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border: none;
+  font-size: clamp(1rem, 3vw, 1rem);
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}

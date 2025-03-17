@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --font-primary: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1d1d2a;
+  margin: 5rem 3.2rem 0;
+  font-family: var(--font-primary);
+  height: 400vh;
+}
+
+/* Spinner loader */
+
+/* Loading Spinner */
+.loading-spinner {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Spinner  */
+.loading-spinner:after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* !Header Section Styling */
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  gap: 3rem;
+}
+
+.Logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.top_input {
+  width: 40.25rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  gap: 2rem;
+  padding-right: 0.5rem;
+}
+
+.top_input input {
+  width: 88%;
+  height: 90%;
+  background-color: inherit;
+  font-size: clamp(1.2rem, 3vw, 1rem);
+  caret-color: red;
+  color: white;
+  border: none;
+}
+
+.top_input input:focus {
+  outline: none;
+  caret-color: white;
+}
+
+.Side_Icons {
+  display: flex;
+  gap: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+
+/* !Welcome Message Banner Styling */
+
+.Welcome_Banner {
+  margin: 2rem 3.2rem 0;
+  color: #ffd700;
+}
+.Welcome_Banner h1 {
+  font-size: clamp(1.5rem, 3vw, 1.5rem);
+  font-weight: normal;
+}
+
+/* !Main Section Styling */
+
+.Main_section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* !sideBar Styling */
+
+.Side_bar {
+  margin: 2rem 3.2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+  height: auto;
+}
+
+.Sidebar_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Sidebar_Items {
+  cursor: pointer;
+  display: flex;
+  gap: 1.3rem;
+}
+
+.Sidebar_Items p {
+  color: white;
+}
+
+/* !Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.container h1 {
+  color: white;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  display: block;
+  color: white;
+  padding-bottom: 0.5rem;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+.inputs input {
+  background-color: inherit;
+  width: 21rem;
+  height: auto;
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: 2px solid #d8dadc;
+  caret-color: white;
+  color: white;
+  font-size: clamp(1.2rem, 3vw, 1rem);
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #808080;
+  opacity: 1;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+
+.btnR button {
+  width: 21rem;
+  height: 58px;
+  background-color: #4a83f6;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border: none;
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  cursor: pointer;
+}
+
+.btnR button:focus,
+button:hover {
+  background-color: #0077ff;
+  color: #e0efff;
+}
+
+/* !Book Card Styling */
+
+.demo_bookContainer {
+  width: 20rem;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 28px;
+}
+
+.books_container {
+  min-width: 16rem;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 28px;
+  transition: transform 0.3s ease;
+}
+
+.books_container:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.card img {
+  border-radius: 10px;
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  display: block;
+}
+
+.card h4 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.card p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  word-break: break-all;
+}
+
+.card button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: #0077ff;
+  background-color: #e0efff;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+button:hover {
+  background-color: #0077ff;
+  color: #e0efff;
+}
+
+.card .D-btn {
+  background-color: black;
+}
+
+.Header_el {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.Header_el .book_navBtn {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: clamp(0.8rem, 3vw, 1.2rem);
+  color: #ffffff;
+  background: linear-gradient(135deg, #56ccf2, #2f80ed);
+  display: block;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+/* !Real Book Container Styling */
+
+.Real_books {
+  width: 100%;
+}
+
+.Real_books h2 {
+  color: white;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 400;
+}
+
+.Real_books .Rbook_header {
+  color: white;
+  font-size: clamp(1.4rem, 3vw, 1rem);
+  font-weight: 400;
+  text-align: center;
+  padding: 1rem;
+}
+
+.Real_books h3 {
+  font-size: clamp(1.5rem, 3vw, 1.2rem);
+  font-weight: 400;
+}
+
+.Rbooks_container {
+  min-width: 88%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 3rem;
+  padding: 1rem;
+}
+
+/* !Media Quiery Styling */
+@media (max-width: 1030px) {
+  .Rbooks_container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(18rem, 1fr));
+  }
+
+  .Main_section {
+    gap: 3rem;
+  }
+
+  .demo_bookContainer {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 690px) {
+  body {
+    margin: 2rem 1.2rem;
+  }
+  .Welcome_Banner h1 {
+    text-align: center;
+  }
+
+  .header_container {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .top_input {
+    order: 1;
+  }
+
+  .Main_section {
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .Side_bar {
+    gap: 2rem;
+  }
+  .Rbooks_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

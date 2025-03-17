@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="loading" class="loading-spinner">Loading...</div>
+    <div id="content" style="display: none">
+      <header class="header_container">
+        <div class="Logo">
+          <img src="../assets/svg/logo.svg" alt="Logo" />
+        </div>
+        <div class="top_input">
+          <input type="text" />
+          <img src="../assets/svg/SearchIcon.svg" alt="Input" />
+        </div>
+        <div class="Side_Icons">
+          <img src="../assets/svg/notification.svg" alt="notification_Icon" />
+          <img
+            src="../assets/svg/batman.svg"
+            height="50"
+            width="50"
+            alt="BatMan_Icon"
+          />
+        </div>
+      </header>
+      <!-- Welcome msg styling -->
+      <section>
+        <div class="Welcome_Banner">
+          <h1>Hello user 👋</h1>
+        </div>
+      </section>
+
+      <!-- Main Section Styling -->
+      <main>
+        <!-- Sidebar Items Styling -->
+        <section class="Main_section">
+          <div class="Side_bar" id="child">
+            <div class="Sidebar_1">
+              <div class="Sidebar_Items" id="Dashboard_nav">
+                <img src="../assets/svg/Dashboard.svg" alt="" />
+                <p>Dashboard</p>
+              </div>
+              <div class="Sidebar_Items" id="Side_bookNav">
+                <img src="../assets/svg/book.svg" alt="" />
+                <p>Books</p>
+              </div>
+              <div class="Sidebar_Items" id="Favrouties_nav">
+                <img src="../assets/svg/favorites.svg" alt="" />
+                <p>favorites</p>
+              </div>
+            </div>
+            <div class="Sidebar_1">
+              <div class="Sidebar_Items">
+                <img src="../assets/svg/settings.svg" alt="" />
+                <p>Settings</p>
+              </div>
+              <div class="Sidebar_Items" id="logout_nav">
+                <img src="../assets/svg/Logout.svg" alt="" />
+                <p>Logout</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <form action="" id="child">
+              <div class="container">
+                <div>
+                  <h1>Create A book 📚</h1>
+                </div>
+                <div class="inputs">
+                  <div>
+                    <label for="book">Book</label>
+                    <input
+                      type="text"
+                      placeholder="Enter Book Name"
+                      name="book"
+                      id="book"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="auth">Author</label>
+                    <input
+                      type="text"
+                      placeholder="Enter Author Name"
+                      name="auth"
+                      id="auth"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="Book_id">Book Id</label>
+                    <input
+                      type="number"
+                      placeholder="Enter Book Id"
+                      name="Book_id"
+                      id="Book_id"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="btnR">
+                <button>Submit</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="demo_bookContainer" id="child">
+            <div class="card">
+              <div>
+                <img src="../assets/images/img3.jpeg" alt="" />
+              </div>
+              <h3>Demo book</h3>
+              <h4>Author Name</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+                dolores dolore aliquid repudiandae, delectus voluptas amet
+                possimus architecto eum tempora earum officiis, deserunt eveniet
+                laudantium cum ea, cumque eligendi maiores!
+              </p>
+              <button>Read more.</button>
+              <button style="background-color: black">Remove.</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <section class="Real_books">
+        <h2 class="Rbook_header">Your Books</h2>
+        <div class="Rbooks_container">
+          <!-- <div class="books_container" id="child">
+          <div class="card">
+            <div>
+              <img src="../assets/images/img3.jpeg" alt="" />
+            </div>
+            <h3>Book Name</h3>
+            <h4>Author Name</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+              dolores dolore aliquid repudiandae, delectus voluptas amet
+              possimus architecto eum tempora earum officiis, deserunt eveniet
+              laudantium cum ea, cumque eligendi maiores!
+            </p>
+            <button>Read more.</button>
+          </div>
+        </div>
+
+        <div class="books_container" id="child">
+          <div class="card">
+            <div>
+              <img src="../assets/images/img2.jpeg" alt="" />
+            </div>
+            <h3>Book Name</h3>
+            <h4>Author Name</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+              dolores dolore aliquid repudiandae, delectus voluptas amet
+              possimus architecto eum tempora earum officiis, deserunt eveniet
+              laudantium cum ea, cumque eligendi maiores!
+            </p>
+            <button>Read more.</button>
+          </div>
+        </div>
+
+        <div class="books_container" id="child">
+          <div class="card">
+            <div>
+              <img src="../assets/images/img1.jpeg" alt="" />
+            </div>
+            <h3>Book Name</h3>
+            <h4>Author Name</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+              dolores dolore aliquid repudiandae, delectus voluptas amet
+              possimus architecto eum tempora earum officiis, deserunt eveniet
+              laudantium cum ea, cumque eligendi maiores!
+            </p>
+            <button>Read more.</button>
+          </div>
+        </div> -->
+
+          <!-- <div class="books_container" id="child">
+          <div class="card">
+            <div>
+              <img src="../assets/images/img3.jpeg" alt="" />
+            </div>
+            <h3>Book Name</h3>
+            <h4>Author Name</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+              dolores dolore aliquid repudiandae, delectus voluptas amet
+              possimus architecto eum tempora earum officiis, deserunt eveniet
+              laudantium cum ea, cumque eligendi maiores!
+            </p>
+            <button>Read more.</button>
+          </div>
+        </div>
+
+        <div class="books_container" id="child">
+          <div class="card">
+            <div>
+              <img src="../assets/images/img3.jpeg" alt="" />
+            </div>
+            <h3>Book Name</h3>
+            <h4>Author Name</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
+              dolores dolore aliquid repudiandae, delectus voluptas amet
+              possimus architecto eum tempora earum officiis, deserunt eveniet
+              laudantium cum ea, cumque eligendi maiores!
+            </p>
+            <button>Read more.</button>
+          </div>
+        </div> -->
+        </div>
+      </section>
+    </div>
+
+    <script src="../assets/js/book.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/landing.css" />
+    <title>Library System</title>
+  </head>
+  <body>
+    <div class="Main">
+      <div class="Img_container">
+        <img src="./assets/images/mainImg.svg" alt="" />
+      </div>
+
+      <div class="headings">
+        <h1>Explore Anime Libraray</h1>
+        <p>Collection of Lot Anime Books, check it out.</p>
+      </div>
+
+      <div class="buttons">
+        <button class="sign_btn" id="sg_btn">Sign In</button>
+        <button class="Create_btn" id="rg_btn">Create account</button>
+      </div>
+    </div>
+
+    <script>
+      const btnSign = document.getElementById("sg_btn");
+      const btnReg = document.getElementById("rg_btn");
+      // Login and Reg button functionality
+      btnSign.addEventListener("click", function () {
+        window.location.href = "./pages/login.html";
+      });
+
+      btnReg.addEventListener("click", function () {
+        window.location.href = "./pages/register.html";
+      });
+    </script>
+  </body>
+</html>
