@@ -4,6 +4,8 @@
 
 Anime Library Book Management is a multi-user book management system built using **pure HTML, CSS, and JavaScript** (no libraries, no APIs, no backend). Users can register, log in, and manage their books, with data stored in **localStorage**.
 
+liveDemo 🔗(https://den766.github.io/AnimeGallery/)
+
 ## Features
 
 ### Authentication
