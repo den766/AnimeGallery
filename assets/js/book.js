@@ -95,7 +95,6 @@ class Books {
     if (books.length > 4) {
       location.reload();
       return alert("Limit Reached , Remove Some books From your Books Section");
-     
     }
     books.push(newBook);
 
@@ -161,16 +160,14 @@ class Books {
   Remove_books() {
     document.addEventListener("click", function (event) {
       if (event.target.classList.contains("D-btn")) {
-        const bookCard = event.target.closest(".card");
-
-        const booksContainer = document.querySelector(".books_container");
+        const bookCard = event.target.closest(".books_container");
 
         const bookElement = bookCard.querySelector("h3");
         const bookName = bookElement
           ? bookElement.textContent.trim()
           : "Unknown Book";
 
-        booksContainer.remove();
+        bookCard.remove();
 
         removeBookFromLocalStorage(bookName);
       }

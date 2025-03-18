@@ -14,7 +14,6 @@ borrow_btn.forEach((btn) => {
     let bookCard = e.target.closest(".books_container");
     let ImgCover_Src = bookCard.querySelector(".cover_Img").src;
     let imgName = ImgCover_Src.substring(ImgCover_Src.lastIndexOf("/") + 1);
-    console.log(imgName);
     let title = bookCard.querySelector(".book-title").textContent;
     let subTitle = bookCard.querySelector(".Sub_title").textContent;
     let userId = JSON.parse(localStorage.getItem("LoggedInuser"));
@@ -48,4 +47,3 @@ borrow_btn.forEach((btn) => {
 your_booksNav.addEventListener("click", function () {
   window.location.href = "dashboard.html";
 });
-
