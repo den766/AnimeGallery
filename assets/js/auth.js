@@ -57,4 +57,3 @@ RegButton.addEventListener("click", function (e) {
   window.location.href = "../pages/login.html";
 });
 
-console.log(Date.now());
